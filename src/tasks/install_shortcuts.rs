@@ -76,7 +76,7 @@ impl Task for InstallShortcutsTask {
                 .to_str()
                 .log_expect("Unable to build shortcut metadata (exe)");
 
-            installed_files.push(create_shortcut(
+            /*installed_files.push(create_shortcut(
                 &shortcut.name,
                 &shortcut.description,
                 tool_path,
@@ -84,7 +84,7 @@ impl Task for InstallShortcutsTask {
                 &format!("--launcher \"{}\"", exe_path),
                 &starting_dir,
                 exe_path,
-            )?);
+            )?);*/
         }
 
         // Update the installed packages shortcuts information in the database

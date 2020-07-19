@@ -48,7 +48,7 @@ impl Task for InstallGlobalShortcutsTask {
             .to_str()
             .log_expect("Unable to build shortcut metadata (tool)");
 
-        let shortcut_file = create_shortcut(
+        /*let shortcut_file = create_shortcut(
             &format!("{} Maintenance Tool", context.base_attributes.name),
             &format!(
                 "Launch the {} Maintenance Tool to update, modify and uninstall the application.",
@@ -63,7 +63,7 @@ impl Task for InstallGlobalShortcutsTask {
 
         if !shortcut_file.is_empty() {
             context.database.shortcuts.push(shortcut_file);
-        }
+        }*/
 
         Ok(TaskParamType::None)
     }

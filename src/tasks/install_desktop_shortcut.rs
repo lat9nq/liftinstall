@@ -11,7 +11,7 @@ use config::PackageDescription;
 
 use logging::LoggingErrors;
 
-use native::create_desktop_shortcut;
+//use native::create_desktop_shortcut;
 
 pub struct InstallDesktopShortcutTask {
     pub name: String,
@@ -81,7 +81,7 @@ impl Task for InstallDesktopShortcutTask {
                 .to_str()
                 .log_expect("Unable to build shortcut metadata (exe)");
 
-            installed_files.push(create_desktop_shortcut(
+            /*installed_files.push(create_desktop_shortcut(
                 &shortcut.name,
                 &shortcut.description,
                 tool_path,
@@ -89,7 +89,7 @@ impl Task for InstallDesktopShortcutTask {
                 &format!("--launcher \"{}\"", exe_path),
                 &starting_dir,
                 exe_path,
-            )?);
+            )?);*/
         }
 
         // Update the installed packages shortcuts information in the database
