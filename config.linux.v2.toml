@@ -42,11 +42,11 @@ requires_authorization = true
 is_new = true
     [packages.source]
     name = "patreon"
-    match = "^yuzu-linux-[0-9]*-[0-9a-f]*.tar.xz$"
+    match = "^yuzu-windows-msvc-[0-9]*-[0-9a-f]*.tar.xz$"
         [packages.source.config]
         repo = "earlyaccess"
     [[packages.shortcuts]]
     name = "yuzu Early Access"
-    relative_path = "yuzu-linux-earlyaccess/yuzu.exe"
+    relative_path = "yuzu-windows-msvc-earlyaccess/yuzu.exe"
     description = "Launch yuzu Early Access"
 
