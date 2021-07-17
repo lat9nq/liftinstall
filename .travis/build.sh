@@ -3,6 +3,6 @@ cd /liftinstall || exit 1
 
 yarn --cwd ui
 
-cargo build
+cargo build --release
 
 chown -R $1:$2 .
